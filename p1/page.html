@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <!--
+        For design, I was inspired by Apple. I really appreciate their ability to
+        keep things simple, friendly, and presentable. So, I tried my best to
+        follow these principles. 
+        
+        To keep it simple, I broke the body into cards.
+        The cards contain an image, followed by text underneath it. I figured cards
+        would be a great choice to organize and display related content.
+        Cards also work great for smaller screen sizes like tablets and phones.
+
+        I really enjoyed Apple's Big Sur graphics, so I decided to use inspired-
+        images as backgrounds for both the cards and page. I went with light
+        versions of red and green because they look warm and welcoming. But they
+        also are complementary, providing contrast and a pop for the cards, the
+        main subject of the page.
+
+        The subject of the page is about me, specifically about things I have been
+        doing recently. With a busy schedule this quarter, I'm already forgetting
+        what I like doing and what I'm looking forward to. So this was a way to
+        remind myself of what I am working towards. It was really relaxing and
+        enjoyable to work on this assignment.
+
+        Although there were a few struggles that came a long with it. The simplest
+        issue to fix, yet the one that took me the longest was linking the style
+        sheet with the html file because I didn't recognize that I misspelled `rel`
+        with `ref`. After that, I ran into issues with formatting the text and
+        images. Sometimes, the text would leak out of the card or the card size
+        wasn't as big as I wanted it to be. Other times, I couldn't center the
+        items properly. 
+
+        Upon completing the assignment, I did learn fixes for these issues by
+        getting a better understanding of `flex`, `margin`, and `padding`.
+
+        Sources for green_wave.png and red_wave.png: https://basicappleguy.com/basicappleblog/making-waves
+    -->
+      <link rel="stylesheet" href="style.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Welcome!</title>
+
+   </head>
+   <body>
+      <header>
+        Hello, I'm Brandon :)
+      </header>
+      <main>
+         <div class="container">
+            <article>
+               <div class="card">
+                  <img
+                     src="selfYosemite.png"
+                     id="hero"
+                     alt="Brandon Zarate smiling for a picture with a waterfall in the background"
+                     title="The developer, Brandon Zarate"/>
+                  <p>
+                     Hello! My name is Brandon, and I am a 4th year CS major at UC
+                     Davis. Although I study at Davis, I actually live in Manteca,
+                     so I actually commute 3 hours per day to attend classes... fun!
+                     When I'm not studying or driving, I like to play guitar, soccer
+                     ,run, and workout. Overall, I just really like being active!
+                     I'm looking forward to few things this year, like graduation, 
+                     getting a job, competing in a marathon, and going to EDC for
+                     the first time! It's going to be a good year :)
+                  </p>
+               </div>
+            </article>
+            <article>
+               <div class="card">
+                  <img
+                     src="snowboard.png"
+                     id="snowboard"
+                     alt="Brandon Zarate sitting on the snow and leaning back onto his snowboard"
+                     title="Snowboarding at Boreal Mountain"/>
+                  <p>
+                     Recently, I really got into snowboarding! I finally 
+                     made it passed the paywall, so now I can finally enjoy
+                     the slopes. Its been a really fun experience, besides
+                     the catching edges part. I really enjoy hitting the 
+                     fresh powder, so much so, I will skip exams if I need
+                     too! I can't wait till the next season begins.
+                  </p>
+               </div>
+            </article>
+         </div>
+         <footer>
+            ©Brandon Zarate 2024 <br>
+            University of California, Davis <br>
+         </footer>
+      </main>
+   </body>
+</html>
