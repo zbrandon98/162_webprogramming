@@ -2,6 +2,9 @@
 <html lang="en">
    <head>
     <!--
+        Sources for green_wave.png and red_wave.png: https://basicappleguy.com/basicappleblog/making-waves
+        Sources for github.256x256.png and linkedin.256x256.ping: https://iconduck.com/icons/1855/github
+
         For design, I was inspired by Apple. I really appreciate their ability to
         keep things simple, friendly, and presentable. So, I tried my best to
         follow these principles. 
@@ -33,8 +36,6 @@
 
         Upon completing the assignment, I did learn fixes for these issues by
         getting a better understanding of `flex`, `margin`, and `padding`.
-
-        Sources for green_wave.png and red_wave.png: https://basicappleguy.com/basicappleblog/making-waves
     -->
       <link rel="stylesheet" href="style.css">
       <meta charset="UTF-8">
@@ -44,10 +45,13 @@
    </head>
    <body>
       <header>
-        Hello, I'm Brandon :)
+         
+         <h1 class="gradient-text">
+            Hello, I'm Brandon :)
+         </h1>
       </header>
       <main>
-         <div class="container">
+         <section class="container">
             <article>
                <div class="card">
                   <img
@@ -55,7 +59,7 @@
                      id="hero"
                      alt="Brandon Zarate smiling for a picture with a waterfall in the background"
                      title="The developer, Brandon Zarate"/>
-                  <p>
+                  <p class="box">
                      Hello! My name is Brandon, and I am a 4th year CS major at UC
                      Davis. Although I study at Davis, I actually live in Manteca,
                      so I actually commute 3 hours per day to attend classes... fun!
@@ -74,7 +78,7 @@
                      id="snowboard"
                      alt="Brandon Zarate sitting on the snow and leaning back onto his snowboard"
                      title="Snowboarding at Boreal Mountain"/>
-                  <p>
+                  <p class="box">
                      Recently, I really got into snowboarding! I finally 
                      made it passed the paywall, so now I can finally enjoy
                      the slopes. Its been a really fun experience, besides
@@ -84,10 +88,30 @@
                   </p>
                </div>
             </article>
-         </div>
+         </section>
          <footer>
-            ©Brandon Zarate 2024 <br>
-            University of California, Davis <br>
+            <section>
+               ©Brandon Zarate 2024 <br>
+               University of California, Davis <br>
+            </section>
+            <section class="container">
+               <a href="https://github.com/zbrandon98">
+                  <img
+                     class="logos"
+                     src="github.256x256.png"
+                     id="github"
+                     alt="A link to developer's GitHub"
+                     title="Github Logo"/>
+               </a>
+               <a href="https://www.linkedin.com/in/bdzarate/">
+               <img
+                  class="logos"
+                  src="linkedin.256x256.png"
+                  id="linkedin"
+                  alt="A link to developer's LinkedIn"
+                  title="LinkedIn Logo"/>
+               </a>
+            </section>
          </footer>
       </main>
    </body>

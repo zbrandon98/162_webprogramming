@@ -2,7 +2,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px;
+    padding-left: 37px;
     font-size: 1.6em;
 }
 
@@ -19,24 +19,35 @@ footer {
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
-    margin: 30px;
     font-size: 1em;
 }
 
 img {
-    border-radius: 30px;
+    border-radius: 20px;
     filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
     align-self: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.box {
+    font-size: .9em;
+    border: solid;
+    border-width: .1em;
+    border-radius: 5px;
+    background-color: rgba(163, 250, 163, 0);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.097),
+                    rgba(0, 0, 0, 0.092)), url("green_wave.png");
+    width: 260px;
+    padding: 12px;
+    height: auto;
 }
 
 .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .card {
@@ -57,6 +68,29 @@ img {
     height: 450px;
     border-radius: 30px;
 }
+
+.gradient-text {
+    background-color: red;    
+    background-image: linear-gradient(45deg, #aa0044, #ff000093);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+.logos {
+    margin: 5px;
+    padding: 5px;
+    height: 64px;
+    width: 64px;
+}
+
+.logos:hover {
+    transform: scale(1.2);
+    transition-duration: 200ms;
+  }
 
 #hero, #snowboard {
     width: 200px;
